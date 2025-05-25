@@ -1,0 +1,239 @@
+        <resources>
+            <string name="app_name">通话录音上传精灵</string>
+            <string name="default_uploading_message">正在上传录音...</string>
+            <string name="uploading_specific_file">正在上传: %s</string>
+            <string name="upload_notification_title">文件上传: %s</string>
+
+            <string name="app_title">通话自动录音上传</string>
+            <string name="app_icon_description">App图标</string>
+            <string name="status_checking_permissions">正在检查权限...</string>
+            <string name="button_service_status">服务状态</string>
+            <string name="button_grant_overlay_permission">授予悬浮窗权限</string>
+            <string name="important_notes">重要提示:
+1. 请确保已授予所有必要权限 (包括悬浮窗权限以显示上传状态)。
+2. 通话录音功能受Android版本和手机制造商限制。
+3. 后台运行可能受系统省电策略影响，请将本应用加入白名单。
+4. 录音文件将尝试上传至预设服务器。
+5. 请遵守当地关于通话录音的法律法规。</string>
+
+                <string name="upload_notification_channel_name">文件上传</string>
+                <string name="upload_notification_channel_description">文件上传状态通知</string>
+
+                <string name="upload_notification_title_template">正在上传: %1$s</string>
+                <string name="uploading_file_message">正在上传 %1$s...</string>
+                <string name="status_upload_preparing">准备上传...</string>
+                <string name="status_uploading">上传中...</string>
+                <string name="status_upload_success">上传成功！</string>
+                <string name="status_upload_failed_server">上传失败: %1$s</string>
+                <string name="status_upload_failed_response_parse_error">上传错误 (响应解析): %1$s</string>
+                <string name="status_upload_failed_http_error">上传失败 (HTTP %1$d): %2$s</string>
+                <string name="status_upload_error_io">上传错误 (网络): %1$s</string>
+                <string name="status_upload_error_unknown">上传错误 (未知): %1$s</string>
+
+
+                <string name="recording_service_channel_name">通话录音服务通道</string>
+                <string name="recording_service_channel_description">通话录音前台服务通道</string>
+                <string name="notification_recording_service_running">通话录音服务正在运行</string>
+                <string name="notification_title_recording_service">通话录音服务</string>
+                <string name="toast_failed_to_access_create_recordings_directory">无法访问/创建录音目录</string>
+                <string name="toast_failed_to_set_audio_source">无法设置录音源: %1$s</string>
+                <string name="toast_recording_started">录音开始: %1$s</string>
+                <string name="toast_recording_start_failed">录音启动失败: %1$s</string>
+                <string name="notification_text_recording">正在录音: %1$s</string>
+                <string name="notification_text_recording_in_progress">进行中</string>
+                <string name="toast_recording_saved">录音已保存: %1$s</string>
+                <string name="notification_text_recording_saved_preparing_upload">录音已保存，准备上传...</string>
+                <string name="toast_recorded_file_invalid">录音文件无效</string>
+                <string name="notification_text_recording_failed_or_invalid">录音失败或文件无效</string>
+                <string name="notification_text_recording_service_standby">通话录音服务待命中</string>
+                <string name="toast_file_added_to_upload_queue">文件已加入上传队列</string>
+
+                <string name="auto_upload_status_unknown">自动上传服务状态: 未知</string>
+                <string name="auto_upload_status_active">自动上传服务状态: 活动中</string>
+                <string name="auto_upload_status_idle">自动上传服务状态: 待命</string>
+                <string name="manual_select_upload_button">手动选择文件上传</string>
+                <string name="recording_log_title">录音上传记录:</string>
+                <string name="manual_upload_button_text">上传</string>
+                <string name="status_checking_status">查看状态中...</string>
+                <string name="status_queued">排队中</string>
+                <string name="status_uploading_manual">手动上传中...</string>
+                <string name="status_queued_manual">手动上传排队...</string>
+                <string name="status_upload_success_generic">上传成功!</string>
+                <string name="status_upload_failed_generic">上传失败.</string>
+                <string name="status_blocked">等待条件</string>
+                <string name="status_cancelled">已取消</string>
+                <string name="overlay_permission_granted_toast">悬浮窗权限授予成功！</string>
+                <string name="overlay_permission_not_granted_toast">悬浮窗权限未授予。</string>
+                <string name="status_overlay_granted">悬浮窗权限已成功授予。</string>
+                <string name="status_overlay_still_not_granted">悬浮窗权限仍未授予。</string>
+                <string name="no_recording_files">无录音记录。</string>
+                <string name="choose_audio_file_title">选择要上传的录音文件</string>
+                <string name="file_manager_missing_toast">请安装文件管理器.</string>
+                <string name="error_getting_file_path">无法获取文件路径，请尝试其他文件或应用.</string>
+                <string name="file_selected_toast">已选择文件: %s</string>
+
+
+                <string name="please_grant_base_permissions">请授予基本权限。</string>
+                <string name="service_managed_auto_toast">服务由电话状态自动管理。</string>
+                <string name="service_start_auto_toast">服务将由电话呼叫自动启动。</string>
+                <string name="overlay_permission_granted_text_status">悬浮窗权限已授予。</string>
+                <string name="overlay_permission_not_granted_text_status">悬浮窗权限未授予。</string>
+                <string name="cannot_open_overlay_settings">无法打开悬浮窗设置界面</string>
+                <string name="overlay_permission_already_granted_toast">悬浮窗权限已授予。</string>
+                <string name="service_running_auto_short">服务运行中 (自动)</string>
+                <string name="service_standby_auto_short">服务待命 (自动)</string>
+                <string name="overlay_permission_granted_button">悬浮窗权限已授予</string>
+                <string name="grant_overlay_permission_button">授予悬浮窗权限</string>
+                <string name="overlay_permission_legacy_button">悬浮窗权限 (API &lt; 23)</string>
+                <string name="attempting_manual_upload">尝试手动上传: %s</string>
+                <string name="service_running_auto_status">自动上传服务状态: 运行中</string>
+                <string name="auto_upload_processing_queue">自动上传服务状态: 处理队列中...</string>
+                <string name="auto_upload_standby_status">自动上传服务状态: 待命</string>
+
+            <string name="some_permissions_denied">部分权限被拒绝。</string>
+            <string name="please_grant_all_permissions">请授予所有必要权限。</string>
+            <string name="base_permissions_granted">所有基本权限已授予。</string>
+
+
+            <string name="file_not_exist_or_empty">文件 \"%s\" 不存在或是空的。</string>
+            <string name="status_queued_manual_selection">已选文件排队上传...</string>
+            <string name="status_queued_manual_retry">重试上传已入队...</string>
+            <string name="upload_request_queued">\"%s\" 已加入上传队列。</string>
+            <string name="overlay_permission_revoked_toast">悬浮窗权限已被撤销。</string>
+
+            <string name="status_initializing">正在初始化...</string>
+            <string name="button_start_monitoring_service">启动小米录音监控</string>
+            <string name="button_stop_monitoring_service">停止小米录音监控</string>
+            <string name="button_grant_storage_permission_android11">授予文件管理权限 (Android 11+)</string>
+            <string name="storage_permission_granted_android11">文件权限已授予 (Android 11+)</string>
+
+            <string name="status_upload_success_prefix">上传成功: </string>
+            <string name="status_upload_failed_prefix">上传失败: </string>
+            <string name="status_not_yet_processed">待处理</string>
+            <string name="status_pending_manual_upload">待手动上传</string>
+            <string name="status_queued_auto">自动队列中</string>
+
+            <string name="created_at_template">创建于: %s</string>
+            <string name="status_template">状态: %s</string>
+            <string name="server_response_template">服务器: %s</string>
+            <string name="status_upload_failed_server_logic">上传失败 (服务器处理): </string>
+            <string name="status_upload_success_generic_error_parsing_response">上传成功 (响应解析异常)</string>
+            <string name="status_upload_failed_exception">上传异常: %s</string>
+            <string name="status_unknown_state">未知状态</string>
+
+            <string name="websocket_service_channel_name">WebSocket 服务通道</string>
+            <string name="websocket_service_channel_description">用于后台WebSocket连接和远程指令</string>
+            <string name="miui_monitor_channel_name">MIUI 录音监控服务通道</string>
+            <string name="miui_monitor_channel_description">监控小米通话录音文件夹</string>
+
+            <string name="ic_monitoring_notification_desc">监控通知图标</string>
+            <string name="ic_websocket_notification_desc">WebSocket通知图标</string>
+            <string name="ic_upload_notification_desc">上传通知图标</string>
+            <string name="default_file_display_name">默认文件名称</string>
+
+            <string name="pref_key_app_recording_enabled">appRecordingEnabled</string>
+            <string name="pref_key_system_monitoring_enabled">systemMonitoringEnabled</string>
+            <string name="pref_key_prefer_system_recording">preferSystemRecording</string>
+
+            <string name="notification_recording_service_standby">通话录音服务待命中</string>
+
+
+                <string name="status_processing_for_upload">准备上传</string>
+                <string name="settings_saved">设置已保存</string>
+                <string name="status_filename_unparsed">文件名无法解析</string>
+                <string name="status_skipped_prefer_system">已跳过 (优先系统录音)</string>
+                <string name="status_skipped_duplicate">已跳过 (重复文件)</string>
+
+                <string name="settings_title_recording">录音设置</string>
+                <string name="setting_enable_app_recording">启用应用内录音 (M4A格式)</string>
+                <string name="setting_enable_system_monitoring">监控系统通话录音 (如小米)</string>
+                <string name="setting_prefer_system_recording">优先系统录音 (若冲突)</string>
+                <string name="button_save_settings">保存设置并应用</string>
+                <string name="label_local_phone_numbers">本机号码 (用于自动拨打和文件名)</string>
+                <string name="hint_local_phone_number_1">本机主要号码 (例如 SIM 1)</string>
+                <string name="hint_local_phone_number_2">本机次要号码 (例如 SIM 2, 可选)</string>
+                <string name="button_connect_websocket">连接 WebSocket</string>
+                <string name="status_websocket_default">WebSocket: 未连接</string>
+                <string name="status_websocket_connecting">WebSocket: 尝试连接...</string>
+                <string name="status_websocket_no_numbers">WebSocket: 号码未配置</string>
+                <string name="status_websocket_start_failed">WebSocket: 启动服务失败</string>
+            <string name="notification_title_websocket_service">websocket服务</string>
+
+                <string name="status_waiting_call_end">录音完成，等待通话结束...</string>
+                <string name="status_call_ended_waiting_delay">通话结束，等待延时上传...</string>
+                <string name="status_websocket_no_numbers_configured">号码未配置</string>
+                <string name="status_websocket_unknown">状态未知</string>
+                <string name="websocket_status_template">WebSocket: %s</string>
+
+                <string name="permission_status_title_template">权限状态:</string>
+                <string name="permission_record_phone_state_template">录音/电话状态: %s</string>
+                <string name="permission_overlay_template">悬浮窗: %s</string>
+                <string name="permission_manage_files_template">文件管理 (A11+): %s</string>
+                <string name="permission_storage_legacy_template">存储 (A10-): %s</string>
+                <string name="permission_call_phone_template">直接拨号: %s</string>
+                <string name="core_permissions_ready">核心权限就绪</string>
+                <string name="please_grant_necessary_permissions">请授予必要权限</string>
+                <string name="auto_upload_status_inactive_or_not_configured">自动上传: 未激活/配置</string>
+
+                <string name="dialog_title_call_middle_number">拨打中间号</string>
+                <string name="dialog_message_call_middle_number">服务器请求通过中间号: %1$s\n呼叫: %2$s\n是否立即呼叫？</string>
+                <string name="button_call_action">呼叫</string>
+                <string name="button_cancel">取消</string>
+                <string name="toast_missing_call_permission">缺少拨打电话权限</string>
+                <string name="toast_call_failed_security">呼叫失败 (安全限制): %s</string>
+                <string name="dialog_title_upload_new_recording">上传新录音？</string>
+                <string name="button_upload_now">立即上传</string>
+                <string name="button_upload_later_manual">稍后手动</string>
+                <string name="toast_added_old_recordings_to_queue">已自动添加 %1$d 个过去24小时内未处理的系统录音到队列。</string>
+                <string name="status_skipped_duplicate_older">已跳过 (重复且较旧)</string>
+                <string name="status_skipped_prefer_app">已跳过 (优先应用录音)</string>
+                <string name="some_permissions_denied_message">部分核心权限被拒绝，功能可能受限。</string>
+                <string name="manage_storage_permission_granted_toast">所有文件访问权限已授予!</string>
+                <string name="manage_storage_permission_not_granted_toast">所有文件访问权限未授予。</string>
+            <string name="notification_recording_service_standby_disabled">通话录音服务 (应用内录音已禁用)</string>
+            <string name="notification_recording_service_standby_error">通话录音服务 (错误)</string>
+            <string name="default_local_identifier_fallback">本机</string>
+
+            <string name="miui_monitor_notification_title">MIUI录音监控</string>
+            <string name="miui_monitor_notification_text_monitoring">小米通话录音监控中...</string>
+            <string name="miui_monitor_notification_text_monitoring_path">监控路径: %s</string>
+            <string name="miui_monitor_notification_text_permission_error">MIUI监控: 权限不足</string>
+            <string name="miui_monitor_notification_text_folder_error">MIUI监控: 目录错误</string>
+            <string name="miui_monitor_notification_text_observer_error">MIUI监控: 观察器错误</string>
+            <string name="miui_monitor_toast_permission_denied">无法监控小米录音文件夹，权限不足！</string>
+            <string name="miui_monitor_toast_folder_not_found">未找到可访问的小米录音文件夹。</string>
+            <string name="miui_monitor_toast_observer_start_failed">启动文件观察器失败!</string>
+            <string name="miui_monitor_toast_new_recording_found">发现新系统录音: %s</string>
+
+                <string name="upload_status_checking_file">检查文件状态: %s</string>
+                <string name="upload_status_pre_checking">预检查中: %s</string>
+                <string name="upload_status_skipped_by_server">已跳过(服务器): %1$s - %2$s</string>
+                <string name="upload_status_preparing_after_check">准备实际上传: %s</string>
+
+                <string name="error_file_path_uri_empty">文件路径/URI为空</string>
+                <string name="error_pre_check_response_invalid_format">预检响应格式无效</string>
+                <string name="error_pre_check_response_parse_failed">预检响应解析失败</string>
+                <string name="error_pre_check_http_failed">预检HTTP失败 (%1$d): %2$s</string>
+                <string name="error_pre_check_exception">预检时发生异常</string>
+                <string name="error_uri_stream_null">无法从URI打开输入流</string>
+                <string name="error_file_invalid_or_empty">文件无效、不存在或为空: %s</string>
+                <string name="error_server_logic_failed">服务器逻辑错误</string>
+                <string name="error_unable_to_parse_response">无法解析响应</string>
+                <string name="error_upload_http_failed">上传失败 (HTTP %1$d): %2$s</string>
+                <string name="error_upload_response_parse_failed">上传响应解析失败</string>
+            <string name="status_upload_preparing_after_check">上传检测</string>
+            <string name="upload_status_copying_uri_content">复制链接</string>
+            <string name="status_upload_skipped_by_server_display">已跳过(服务器检查): %1$s - %2$s</string>
+
+            <string name="status_websocket_no_identifiers">无有效标识符，连接失败</string>
+            <string name="status_websocket_error_uri_format">连接失败: URL格式错误</string>
+            <string name="status_websocket_connected">已连接</string>
+            <string name="status_websocket_disconnected_reason">已断开: %s</string>
+            <string name="status_websocket_connection_error">连接错误</string>
+            <string name="status_websocket_reconnecting_in_seconds">连接中断，%1$d秒后尝试重连...</string>
+            <string name="status_websocket_attempting_reconnect">WebSocket 尝试重连...</string>
+            <string name="status_websocket_manually_disconnected">已手动断开</string>
+            <string name="status_websocket_disconnected">已断开</string>
+
+
+        </resources>

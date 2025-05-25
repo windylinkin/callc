@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初始化中..." />
+
+        <TextView
+            android:id="@+id/tvPermissionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="权限检查中..." />
+
+        <Button
+            android:id="@+id/btnGrantOverlayPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授予悬浮窗权限" />
+
+        <Button
+            android:id="@+id/btnGrantStoragePermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="授予文件管理权限 (Android 11+)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本机号码 (用于WebSocket和文件名):"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="本机主要号码 (例如 SIM 1)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="本机次要号码 (例如 SIM 2, 可选)"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录音设置:"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchAppRecording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启用应用内录音 (M4A格式)" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSystemMonitoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监控系统录音 (如小米录音)" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchPreferSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="优先系统录音 (若冲突)" />
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="保存设置并应用" />
+
+        <Button
+            android:id="@+id/btnConnectWs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="连接 WebSocket" />
+
+        <TextView
+            android:id="@+id/tvWebSocketStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="WebSocket: 未连接" />
+
+
+        <TextView
+            android:id="@+id/tvAutoUploadServiceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动上传服务状态: 未知"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnSelectAndUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手动选择文件上传" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRecordingLog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="150dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/important_notes"
+            android:textSize="10sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+
+    </LinearLayout>
+</ScrollView>

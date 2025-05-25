@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/floating_bg"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <ProgressBar
+        android:id="@+id/pbUploadIndicator"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:indeterminate="true" />
+
+    <TextView
+        android:id="@+id/tvFloatingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_uploading_message"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

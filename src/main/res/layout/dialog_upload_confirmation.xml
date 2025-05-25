@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测到新的通话录音："
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogRecordingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件名: example_call_rec.mp3"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogRecordingSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大小: 1.2 MB"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

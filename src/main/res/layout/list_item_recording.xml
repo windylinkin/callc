@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/tvRecordingFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="RecordingFile.mp4"/>
+
+    <TextView
+        android:id="@+id/tvRecordingTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Created: 2025-05-16 10:00:00"/>
+
+    <TextView
+        android:id="@+id/tvRecordingUploadStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Status: Pending"/>
+
+    <Button
+        android:id="@+id/btnManualUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/> </LinearLayout>
